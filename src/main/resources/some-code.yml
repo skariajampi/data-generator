@@ -1,0 +1,14 @@
+en:
+  faker:
+    some-code:
+      list-10:
+        - "some_code_11"
+        - "some_code_12"
+        - "some_code_13"
+        - "some_code_14"
+
+      list-20:
+        - "some_code_21"
+        - "some_code_22"
+        - "some_code_23"
+        - "some_code_24"
