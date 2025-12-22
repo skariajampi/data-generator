@@ -8,7 +8,7 @@ public class DataGenerator {
     public static SomeDataGen unique(){
         DataGenContext dataGenContext = DataGenContext.builder()
                 .someId(DataContextHelper.someId())
-                .someValue(DataContextHelper.defaultSomeValue())
+                .someValue("Some Value")
                 .someDateTime(DataContextHelper.defaultSomeTime())
                 .build();
         return new SomeDataGen(dataGenContext);
