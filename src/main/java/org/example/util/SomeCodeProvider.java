@@ -1,6 +1,5 @@
 package org.example.util;
 
-import net.datafaker.Faker;
 import net.datafaker.providers.base.AbstractProvider;
 import net.datafaker.providers.base.BaseProviders;
 
@@ -13,7 +12,7 @@ public class SomeCodeProvider extends AbstractProvider<BaseProviders> {
 
     public SomeCodeProvider(BaseProviders faker, StatefulSequence sequence) {
         super(faker);
-        faker.addPath(Locale.ENGLISH, Paths.get(this.getClass().getClassLoader().getResource(KEY + ".yml").getPath()).toAbsolutePath());
+        faker.addPath(Locale.ENGLISH, Paths.get(this.getClass().getClassLoader().getResource("some-code.yml").getPath()).toAbsolutePath());
         this.sequence = sequence;
         this.sequence.reset(resolve(KEY + ".some-code-initial"));
     }
