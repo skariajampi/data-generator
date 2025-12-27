@@ -26,6 +26,11 @@ public class SomeCodeProvider extends AbstractProvider<BaseProviders> {
         this.sequence = newSequence;
     }
 
+    public void resetToInitialValueFromFile() {
+        this.sequence.reset(resolve(KEY + ".some-code-initial"));
+    }
+
     public String list10() { return resolve(KEY + ".list-10"); }
     public String list20() { return resolve(KEY + ".list-20"); }
+    public String getInitialValueFromFile() { return resolve(KEY + ".some-code-initial"); }
 }
